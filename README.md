@@ -11,4 +11,4 @@ Neste repósitório, estarão todos os documentos e orientações sobre o projet
 - Link do projeto no Figma
 - 
 ## 📦 Documentos de Banco de Dados
--
+- https://taylansilva0402.atlassian.net?continue=https%3A%2F%2Ftaylansilva0402.atlassian.net%2Fwelcome%2Fsoftware&atlOrigin=eyJpIjoiMTdiMDRiZTE4Y2IxNDA2ODgwMDc4NTg3MTQ4NGI5YTMiLCJwIjoiaiJ9
