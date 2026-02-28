@@ -77,6 +77,16 @@ CREATE TABLE IF NOT EXISTS item (
     CONSTRAINT fk_pedido FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido) ON DELETE CASCADE
 );
 
+CREATE INDEX IF NOT EXISTS idx_credencial_usuario ON credencial(id_usuario);
+CREATE INDEX IF NOT EXISTS idx_endereco_usuario ON endereco(id_usuario);
+CREATE INDEX IF NOT EXISTS idx_pedido_usuario ON pedido(id_usuario);
+CREATE INDEX IF NOT EXISTS idx_item_pedido ON item(id_pedido);
+CREATE INDEX IF NOT EXISTS idx_item_produto ON item(id_produto);
+CREATE INDEX IF NOT EXISTS idx_produto_titulo ON produto(titulo); 
+CREATE INDEX IF NOT EXISTS idx_produto_preco ON produto(preco);
+CREATE INDEX IF NOT EXISTS idx_pedido_data ON pedido(data_pedido);
+CREATE INDEX IF NOT EXISTS idx_usuario_nome ON usuario(nome);
+
 -- anotações:
 
 -- troquei SERIAL PRIMARY KEY POR GENERATED ALWAYS AS IDENTITY PRIMARY KEY
